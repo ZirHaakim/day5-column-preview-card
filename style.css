@@ -1,0 +1,131 @@
+:root {
+  --Gold-500: hsl(31, 77%, 52%);
+  --Cyan-800: hsl(184, 100%, 22%);
+  --Green-950: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Gray-100-background-headings-buttons: hsl(0, 0%, 95%);
+
+  --space-0: 0px;
+  --space-8: 8px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-80: 80px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.text-preset-1 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: var(--space-0);
+}
+
+.text-preset-2 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24.67px;
+  letter-spacing: var(--space-0);
+}
+body {
+  color: var(--Transparent-white-paragraphs);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  font-family: "Big Shoulders", sans-serif;
+  /* font-family: "Lexend Deca", sans-serif; */
+}
+
+.container {
+  margin-top: var(--space-40);
+  width: 327px;
+  border-radius: var(--space-8);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-1 {
+  background-color: var(--Gold-500);
+}
+
+.container-2 {
+  background-color: var(--Cyan-800);
+}
+
+.container-3 {
+  background-color: var(--Green-950);
+}
+
+.btn-1 {
+  color: var(--Gold-500);
+}
+
+.btn-2 {
+  color: var(--Cyan-800);
+}
+
+.btn-3 {
+  color: var(--Green-950);
+}
+/* common css */
+.container-1,
+.container-2,
+.container-3 {
+  padding: var(--space-48);
+}
+.sedans,
+.suvs,
+.luxury {
+  align-self: flex-start;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+}
+
+.text-container,
+.txt-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+}
+
+.my-btn {
+  align-self: flex-start;
+  border-radius: 25px;
+  border: none;
+  padding: var(--space-8) var(--space-32);
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 921px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inner-container {
+    gap: var(--space-40);
+  }
+
+  .text-container {
+    gap: var(--space-80);
+  }
+
+  .my-btn {
+    padding: 12px var(--space-32);
+  }
+}
